@@ -1,1 +1,1 @@
-<hostname>{{ hostanem }}</hostname>
+<hostname>{{ hostname }}</hostname>
