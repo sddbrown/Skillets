@@ -2,10 +2,10 @@
 # LINK TO META FILE DOCS
 
 # unique snippet name
-name: turorial_hostname_tag
+name: Tutorial_Hostname
 # label used for menu selection
-label: v90 test
-description: Adds hostname and tag to config
+label: Hostname
+description: Change Hostname on firwall
 
 # type of device configuration
 # common types are panorama, panos, and template
