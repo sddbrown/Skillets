@@ -39,5 +39,5 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
-  - name: file
-    file: hostname.xml
+  - name: Sample
+    file: paloalto_vnfd.yaml
