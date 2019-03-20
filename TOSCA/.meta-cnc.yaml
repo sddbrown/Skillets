@@ -22,9 +22,9 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 variables:
-  - name: hostname
-    description: Firewall hostname
-    default: myFirewall
+  - name: file
+    description: Template
+    default: vNFd-sample-tosca.yaml
     type_hint: text
   #- name: choices
   #  description: sample dropdown list
@@ -39,6 +39,5 @@ variables:
 # snippets used for api configuration including xpath and element as file name
 # files will load in the order listed
 snippets:
-  - name: hostname
-    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig
+  - name: file
     file: hostname.xml
