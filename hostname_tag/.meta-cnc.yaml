@@ -1,0 +1,44 @@
+# snippets is used to load a full NGFW configuration
+# LINK TO META FILE DOCS
+
+# unique snippet name
+name: turorial_hostname_tag
+# label used for menu selection
+label: v90 test
+description: Adds hostname and tag to config
+
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+type: panos
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+  collection: sample
+
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
+variables:
+  - name: hostname
+    description: Firewall hostname
+    default: myFirewall
+    type_hint: text
+  #- name: choices
+  #  description: sample dropdown list
+  #  default: choices
+  #  type_hint: dropdown
+  #  dd_list:
+  #    - key: option1
+  #      value: option1
+  #    - key: option2
+  #      value: option2
+
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+  - name: hostname
+    xpath: /config/devices/entry[@name='localhost.localdomain']/deviceconfig
+    file: hostname.xml
