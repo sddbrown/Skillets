@@ -23,8 +23,12 @@ labels:
 # type_hints can be text, ip_address, or dropdown
 variables:
   - name: vnf_id
-    description: vnf:id
+    description: VNF Name
     default: paloalto_vnfd
+    type_hint: text
+    name: vnf_mgt
+    description: vnf_mgt
+    default: paloalto_vnfd-VM
     type_hint: text
   #- name: choices
   #  description: sample dropdown list
