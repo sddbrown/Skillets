@@ -26,7 +26,7 @@ variables:
     description: VNF Name
     default: paloalto_vnfd
     type_hint: text
-    name: vnf_mgt
+  - name: vnf_mgt
     description: vnf_mgt
     default: paloalto_vnfd-VM
     type_hint: text
