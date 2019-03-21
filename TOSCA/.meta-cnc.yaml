@@ -45,5 +45,3 @@ variables:
 snippets:
   - name: Sample
     file: paloalto_vnfd.yaml
-  - name: Opentack_Heat
-    file: openstack-heat.yaml
