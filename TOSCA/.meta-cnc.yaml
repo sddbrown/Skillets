@@ -22,9 +22,9 @@ labels:
 # type_hint defines the form field used by panhandler
 # type_hints can be text, ip_address, or dropdown
 variables:
-  - name: file
-    description: Template
-    default: vNFd-sample-tosca.yaml
+  - name: vnf_id
+    description: vnf:id
+    default: paloalto_vnfd
     type_hint: text
   #- name: choices
   #  description: sample dropdown list
