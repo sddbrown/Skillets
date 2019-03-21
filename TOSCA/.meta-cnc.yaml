@@ -5,7 +5,7 @@
 name: TOSCA Template
 # label used for menu selection
 label: TOSCA
-description: Sample TOSCA Template using Panhandler
+description: Sample TOSCA Template
 
 # type of device configuration
 # common types are panorama, panos, and template
