@@ -4,8 +4,8 @@
 # unique snippet name
 name: Openstack Template
 # label used for menu selection
-label: Openstack ServiceChain
-description: Openstack Service Chain Template
+label: Openstack Heat
+description: Openstack Heat Template
 
 # type of device configuration
 # common types are panorama, panos, and template
