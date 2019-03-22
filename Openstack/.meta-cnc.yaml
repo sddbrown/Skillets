@@ -1,0 +1,47 @@
+# snippets is used to load a full NGFW configuration
+# LINK TO META FILE DOCS
+
+# unique snippet name
+name: TOSCA Template
+# label used for menu selection
+label: Openstack ServiceChain
+description: Openstack Service Chain Template
+
+# type of device configuration
+# common types are panorama, panos, and template
+# https://github.com/PaloAltoNetworks/panhandler/blob/develop/docs/metadata_configuration.rst
+type: template
+# preload static or default-based templates
+extends:
+
+# grouping of like snippets for dynamic menu creation in panhandler
+labels:
+  collection: Openstack Templates
+
+# variables used in the configuration templates
+# type_hint defines the form field used by panhandler
+# type_hints can be text, ip_address, or dropdown
+variables:
+  - name: vnf_id
+    description: VNF_Name
+    default: paloalto_vnfd
+    type_hint: text
+  - name: vnf_mgt
+    description: VNF_Management
+    default: paloalto_vnfd-VM
+    type_hint: text
+  #- name: choices
+  #  description: sample dropdown list
+  #  default: choices
+  #  type_hint: dropdown
+  #  dd_list:
+  #    - key: option1
+  #      value: option1
+  #    - key: option2
+  #      value: option2
+
+# snippets used for api configuration including xpath and element as file name
+# files will load in the order listed
+snippets:
+  - name: Sample
+    file: Service_chain.yaml
