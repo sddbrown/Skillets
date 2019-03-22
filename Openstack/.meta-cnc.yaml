@@ -2,7 +2,7 @@
 # LINK TO META FILE DOCS
 
 # unique snippet name
-name: TOSCA Template
+name: Openstack Template
 # label used for menu selection
 label: Openstack ServiceChain
 description: Openstack Service Chain Template
